@@ -1,7 +1,5 @@
-import { AccountType } from './account-type.entity';
-import { Permission } from './permissions.entity';
-
- 
+import { AccountType } from "./account-type.entity";
+import { Permission } from "./permissions.entity";
 
 export interface IAccessToken {
   readonly email: string;

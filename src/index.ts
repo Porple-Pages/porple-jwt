@@ -34,7 +34,7 @@ export default class JwtService {
   algorithm = "aes-256-ctr";
 
   iv: Buffer = randomBytes(16);
-  key?: Buffer; //=  randomBytes(32);
+  key?: Buffer;
   initialized = false;
 
   /**
@@ -97,7 +97,7 @@ export default class JwtService {
       permissions,
       email: data.email,
       id: data.id,
-      type: data.accountType, //== UserType.ADMIN ? TokenType.ADMIN : TokenType.USER,
+      type: data.accountType, // == UserType.ADMIN ? TokenType.ADMIN : TokenType.USER,
     };
     // encrypt the payload
     const encrypted = await this.encryptData(d);

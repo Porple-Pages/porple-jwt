@@ -20,7 +20,7 @@
     "url": "https://github.com/Porple-Pages/porple-jwt/issues"
   },
   "files": [
-    "lib/**/*"
+    "build/**/*"
   ],
   "homepage": "https://github.com/Porple-Pages/porple-jwt#readme",
   "devDependencies": {
@@ -31,6 +31,11 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
-    "jsonwebtoken": "^8.5.1"
+    "@types/inquirer": "^9.0.1",
+    "assert": "^2.0.0",
+    "crypto": "^1.0.1",
+    "inquirer": "^9.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "util": "^0.12.4"
   }
 }

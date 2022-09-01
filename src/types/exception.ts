@@ -6,7 +6,7 @@ export class Exception {
     this.code = code;
   }
   static fromValidation(validation: any) {
-    return { message: 'invalid data provided', errors: validation };
+    return { message: "invalid data provided", errors: validation };
   }
 
   static fromErrorMessage(message: string, code = 100) {
